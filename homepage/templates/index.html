@@ -1,0 +1,31 @@
+{% extends 'base.html'  %}
+{% load static %}
+{% block content %}
+        
+    <!--====== CAROUSEL PART START==========-->
+    {% include 'carousel.html' %}
+    <!--====== CAROUSEL PART ENDS==========-->
+
+    <!--====== ABOUT PART START ======-->
+    {% include 'about.html' %}
+    <!--====== ABOUT PART ENDS ======-->
+    
+    <!--====== news PART START ======-->
+    {% include 'news.html' %}
+    <!--====== news PART ENDS ======-->    
+    
+    <!--====== Members THREE PART START ======-->
+    {% include 'members.html' %}
+    <!--====== Members THREE PART ENDS ======-->
+    
+    <!--====== CLIENT LOGO PART START ======-->
+
+    {% include 'labs.html' %}
+
+    <!--====== CLIENT LOGO PART ENDS ======-->
+    
+    <!--====== CONTACT TWO PART START ======-->
+    {% include 'contact.html' %}
+    <!--====== CONTACT TWO PART ENDS s======-->
+ {% endblock %}   
+    

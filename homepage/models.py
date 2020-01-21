@@ -11,6 +11,7 @@ class Base(models.Model):
 
 class Categoria(Base):
     category = models.CharField('Categoria', max_length=100)
+    
 
     class Meta:
         verbose_name = 'Categoria'

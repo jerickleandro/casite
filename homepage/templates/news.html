@@ -15,18 +15,20 @@
                         <ul>
                             <li data-filter="*" class="active">TODAS</li>
                             {% for c in categorias %}
-                            <li data-filter=".{{ c.categoria }}-3">{{ c.categoria }}</li>
+                            <li data-filter=".{{ c.categoria }}">{{ c.categoria }}</li>
                             {% endfor %}
                         </ul>
                     </div> <!-- portfolio menu -->
                 </div>
             </div> <!-- row -->
             
+
+
             <div class="row grid">
 
 
-                {% for n in noticias%}
-                <div class="col-lg-4 col-sm-6 {{ n.category }}-3">
+                {% for n in noticias %}
+                <div class="col-lg-4 col-sm-6 {{ n.category }}">
                     <div class="single-portfolio mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s">
                         <div class="portfolio-image">
                             <img src="{{ n.imagem.thumb.url }}" alt="">

@@ -455,9 +455,9 @@ p {
 .rounded-buttons .rounded-three {
   overflow: hidden;
   line-height: 52px;
-  background: -webkit-linear-gradient(left, #43cae9 0%, #38f9d7 50%, #43cae9 100%);
-  background: -o-linear-gradient(left, #43cae9 0%, #38f9d7 50%, #43cae9 100%);
-  background: linear-gradient(to right, #43cae9 0%, #38f9d7 50%, #43cae9 100%);
+  background: -webkit-linear-gradient(left, #65ee42 0%, #38f9d7 50%, #43cae9 100%);
+  background: -o-linear-gradient(left, #65ee42 0%, #38f9d7 50%, #43cae9 100%);
+  background: linear-gradient(to right, #65ee42 0%, #38f9d7 50%, #43cae9 100%);
   background-size: 200% auto;
   color: #fff;
   border: 0;
@@ -600,9 +600,9 @@ p {
 ===========================*/
 /*===== NAVBAR EIGHT =====*/
 .navbar-area {
-  background: -webkit-linear-gradient(left, #43cae9 0%, #38f9d7 100%);
-  background: -o-linear-gradient(left, #43cae9 0%, #38f9d7 100%);
-  background: linear-gradient(to right, #43cae9 0%, #38f9d7 100%);
+  background: -webkit-linear-gradient(left, #3aee0d 0%, #65ee42 100%);
+  background: -o-linear-gradient(left, #3aee0d 0%, #65ee42 100%);
+  background: linear-gradient(to right, #3aee0d 0%, #65ee42 100%);
   padding: 10px 0;
   position: absolute;
   top: 0;

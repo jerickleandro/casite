@@ -33,3 +33,34 @@ class Noticia(Base):
 
     def __str__(self):
         return self.titulo
+
+class Membros(Base):
+    CARGOS_CHOICES = (
+        ('Presidente','Presidente'),
+        ('Vice Presidente','Vice Presidente'),
+        ('Secretário Geral','Secretário Geral'),
+        ('Tesoureiro','Tesoureiro'),
+        ('Diretor de comunicação','Diretor de comunicação'),
+        ('Membro','Membro')
+    )
+    nome = models.CharField('Nome',max_length=100)
+    image = StdImageField('Imagem', upload_to='postimage', variations={'thumb': {'width': 350, 'height': 280, 'crop': True}})
+    descricao = models.TextField('Descrição', default='SOME STRING')
+    cargo = models.CharField('Cargo', max_length=25, choices=CARGOS_CHOICES)
+    class Meta:
+        verbose_name = 'Membro'
+        verbose_name_plural = 'Membros'
+
+    def __str__(self):
+        return self.nome
+class Labs(Base):
+    
+    nome = models.CharField('Nome',max_length=100)
+    image = StdImageField('Imagem', upload_to='postimage', variations={'thumb': {'width': 263, 'height': 130, 'crop': True}})
+    
+    class Meta:
+        verbose_name = 'Laboratório'
+        verbose_name_plural = 'Laboratórios'
+
+    def __str__(self):
+        return self.nome

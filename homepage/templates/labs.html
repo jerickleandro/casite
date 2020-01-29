@@ -1,47 +1,25 @@
 {% load static %}  
    <section id="client" class="client-logo-area">
         <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section-title text-center pb-20">
+                        <h3 class="title">Laboratórios</h3>
+                        <p class="text">Esses são alguns laboratórios de pesquisa e extenção do curso de ADS</p>
+                    </div> <!-- section title -->
+                </div>
+            </div>
             <div class="row client-active">
-                <div class="col-lg-3">
+            {% for l in labs %}
+
+                <div class="col-lg-6">
                     <div class="single-client text-center">
-                        <img src="assets/images/client_logo_01.png" alt="Logo">
+                        <img src="{{ l.image.thumb.url }}" alt="{{ l.nome }}">
                     </div> <!-- single client -->
                 </div>
-                <div class="col-lg-3">
-                    <div class="single-client text-center">
-                        <img src="assets/images/client_logo_02.png" alt="Logo">
-                    </div> <!-- single client -->
-                </div>
-                <div class="col-lg-3">
-                    <div class="single-client text-center">
-                        <img src="assets/images/client_logo_03.png" alt="Logo">
-                    </div> <!-- single client -->
-                </div>
-                <div class="col-lg-3">
-                    <div class="single-client text-center">
-                        <img src="assets/images/client_logo_04.png" alt="Logo">
-                    </div> <!-- single client -->
-                </div>
-                <div class="col-lg-3">
-                    <div class="single-client text-center">
-                        <img src="assets/images/client_logo_05.png" alt="Logo">
-                    </div> <!-- single client -->
-                </div>
-                <div class="col-lg-3">
-                    <div class="single-client text-center">
-                        <img src="assets/images/client_logo_06.png" alt="Logo">
-                    </div> <!-- single client -->
-                </div>
-                <div class="col-lg-3">
-                    <div class="single-client text-center">
-                        <img src="assets/images/client_logo_07.png" alt="Logo">
-                    </div> <!-- single client -->
-                </div>
-                <div class="col-lg-3">
-                    <div class="single-client text-center">
-                        <img src="assets/images/client_logo_08.png" alt="Logo">
-                    </div> <!-- single client -->
-                </div>
+            
+            {% endfor %}    
             </div> <!-- row -->
+            
         </div> <!-- container -->
     </section>

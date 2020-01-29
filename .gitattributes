@@ -1,4 +1,4 @@
-* linguist-vendored
-*.css linguist-vendored=false
-*.python linguist-detectable=true
+static/* linguist-vendored
+casite/static/* linguist-vendored
+casite/templates/* linguist-vendored
 
